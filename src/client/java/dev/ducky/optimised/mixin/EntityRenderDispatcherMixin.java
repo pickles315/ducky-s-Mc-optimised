@@ -20,11 +20,9 @@ public abstract class EntityRenderDispatcherMixin {
             double cameraZ,
             CallbackInfoReturnable<Boolean> cir
     ) {
-        double limit = PerformanceConfig.maxEntityDistance;
-        if (limit <= 0.0) {
-            return;
-        }
+        if (!PerformanceConfig.entityCulling) return;
 
+        double limit = PerformanceConfig.maxEntityDistance;
         double dx = entity.getX() - cameraX;
         double dy = entity.getY() - cameraY;
         double dz = entity.getZ() - cameraZ;
