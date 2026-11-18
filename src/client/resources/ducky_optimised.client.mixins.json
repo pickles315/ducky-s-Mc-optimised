@@ -3,7 +3,8 @@
   "package": "dev.ducky.optimised.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": [
-    "EntityRenderDispatcherMixin"
+    "EntityRenderDispatcherMixin",
+    "BlockEntityRenderDispatcherMixin"
   ],
   "injectors": {
     "defaultRequire": 1
