@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "ducky_optimised",
+  "version": "${version}",
+  "name": "Ducky's MC Optimised",
+  "description": "A client-side performance add-on for Minecraft 26.2. Adds configurable distance culling and a foundation for further rendering optimisations.",
+  "authors": ["Ducky"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.ducky.optimised.DuckyOptimised"]
+  },
+  "mixins": [
+    {
+      "config": "ducky_optimised.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
