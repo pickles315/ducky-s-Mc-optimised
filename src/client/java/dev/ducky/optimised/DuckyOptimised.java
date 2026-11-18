@@ -11,7 +11,7 @@ public final class DuckyOptimised implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         PerformanceConfig.load();
-        LOGGER.info("Ducky's MC Optimised loaded. Entity distance limit: {} blocks (0 = disabled).",
-                PerformanceConfig.maxEntityDistance);
+        VideoSettingsButton.register();
+        LOGGER.info("Ducky's MC Optimised loaded.");
     }
 }
